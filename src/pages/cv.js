@@ -59,6 +59,7 @@ export default function Home() {
       {/* Header */}
       <Header />
 
+      {/* Updated Download Links for CV */}
       <div className="flex justify-center mt-8">
   <Link href="./Ross_CV.pdf" passHref>
     <div className="text-red-500 hover:text-gray-700 mr-4 flex items-center cursor-pointer">
