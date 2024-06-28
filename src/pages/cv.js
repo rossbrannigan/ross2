@@ -6,6 +6,7 @@ import Header from "./header";
 import Footer from "./footer";
 import { FaDownload } from 'react-icons/fa';
 import { FaFilePdf, FaFileWord } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -59,23 +60,20 @@ export default function Home() {
       <Header />
 
       <div className="flex justify-center mt-8">
-        <a
-          href="./Ross_CV.pdf"
-          download="Ross_CV.pdf"
-          className="text-red-500 hover:text-gray-700 mr-4 flex items-center"
-        >
-          <FaFilePdf className="mr-2" />
-          Download PDF
-        </a>
-        <a
-          href="./Ross_CV.docx"
-          download="Ross_CV.docx"
-          className="text-blue-500 hover:text-gray-700 flex items-center"
-        >
-          <FaFileWord className="mr-2" />
-          Download Word
-        </a>
-      </div>
+  <Link href="./Ross_CV.pdf" passHref>
+    <div className="text-red-500 hover:text-gray-700 mr-4 flex items-center cursor-pointer">
+      <FaFilePdf className="mr-2" />
+      Download PDF
+    </div>
+  </Link>
+
+  <Link href="./Ross_CV.docx" passHref>
+    <div className="text-blue-500 hover:text-gray-700 flex items-center cursor-pointer">
+      <FaFileWord className="mr-2" />
+      Download Word
+    </div>
+  </Link>
+</div>
 
        {/* Google Analytics - https://nextjs.org/docs/messages/next-script-for-ga */}
       <GoogleAnalytics gaId="G-R17NJV1L4N" />

@@ -4,6 +4,8 @@ import Header from "./header";
 import Subheader from "./subheader";
 import Footer from "./footer";
 import Cloud from "./cloud";
+import { GoogleTagManager } from '@next/third-parties/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function Home() {
   return (
@@ -24,6 +26,7 @@ export default function Home() {
 
       <div>
         <Header />
+        <GoogleAnalytics gaId="G-R17NJV1L4N" />
         <Subheader />
         <Cloud />
         <Footer />
