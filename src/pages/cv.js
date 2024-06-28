@@ -7,6 +7,7 @@ import Footer from "./footer";
 import { FaDownload } from 'react-icons/fa';
 import { FaFilePdf, FaFileWord } from 'react-icons/fa';
 import Link from 'next/link';
+import DownloadLinks from './DownloadLinks';
 
 export default function Home() {
   return (
@@ -59,22 +60,9 @@ export default function Home() {
       {/* Header */}
       <Header />
 
-      {/* Updated Download Links for CV */}
-      <div className="flex justify-center mt-8">
-  <Link href="./Ross_CV.pdf" passHref>
-    <div className="text-red-500 hover:text-gray-700 mr-4 flex items-center cursor-pointer">
-      <FaFilePdf className="mr-2" />
-      Download PDF
-    </div>
-  </Link>
 
-  <Link href="./Ross_CV.docx" passHref>
-    <div className="text-blue-500 hover:text-gray-700 flex items-center cursor-pointer">
-      <FaFileWord className="mr-2" />
-      Download Word
-    </div>
-  </Link>
-</div>
+      {/* Updated Download Links for CV */}
+      <DownloadLinks />
 
        {/* Google Analytics - https://nextjs.org/docs/messages/next-script-for-ga */}
       <GoogleAnalytics gaId="G-R17NJV1L4N" />
