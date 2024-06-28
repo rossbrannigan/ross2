@@ -30,7 +30,7 @@ const products = [
   { name: 'Marketing Technology', description: 'Utilizing marketing tech platforms, ad tech solutions, and effective marketing campaigns', href: '#', icon: ArrowPathIcon },
 ];
 const callsToAction = [
-  { name: 'View CV', href: '#', icon: PlayCircleIcon },
+  { name: 'View CV', href: '/cv', icon: PlayCircleIcon },
   { name: 'Contact', href: '#', icon: PhoneIcon },
 ];
 
@@ -114,7 +114,7 @@ const Header = () => {
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             About 
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/cv" className="text-sm font-semibold leading-6 text-gray-900">
             Experience
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
