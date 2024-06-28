@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="bg-gray-100 min-h-screen">
       <Head>
-            {/* Add Tinybird tracking tag */}
+            {/* Add Tinybird tracking tag delete */}
       <script defer
   src="https://unpkg.com/@tinybirdco/flock.js"
   data-host="https://api.tinybird.co"
